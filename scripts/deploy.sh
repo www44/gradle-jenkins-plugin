@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -x
 cd $TRAVIS_BUILD_DIR
-./gradlew publishPlugins
+./gradlew publishPlugins -Pgradle.publish.key="${gradlePublishKey}" -Pgradle.publish.secret="${gradlePublishSecret}"
