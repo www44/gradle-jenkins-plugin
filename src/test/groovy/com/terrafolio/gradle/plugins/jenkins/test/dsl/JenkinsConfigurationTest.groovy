@@ -44,7 +44,7 @@ class JenkinsConfigurationTest extends ProjectSpec {
     """
 
     def setup() {
-        project.apply plugin: 'com.terrafolio.jenkins'
+        project.apply plugin: 'com.terrafolio.jenkins.www'
     }
 
     def "configure adds jenkins job" () {

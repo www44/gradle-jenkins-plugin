@@ -34,7 +34,7 @@ abstract class JenkinsPluginTaskSpec extends ProjectSpec {
     """
 
     def setup() {
-        project.apply plugin: 'com.terrafolio.jenkins'
+        project.apply plugin: 'com.terrafolio.jenkins.www'
 
         project.ext.branches = [
                 master: [parents: []],
