@@ -106,15 +106,15 @@ nexus {
 
 modifyPom {
     project {
-        name 'gradle-jenkins-plugin'
+        name 'gradle-jenkins-plugin-www'
         description 'This is a gradle plugin for programmatically configuring Jenkins jobs.'
-        url 'https://github.com/ghale/gradle-jenkins-plugin'
+        url 'https://github.com/www/gradle-jenkins-plugin'
         inceptionYear '2012'
 
         scm {
-            url 'https://github.com/ghale/gradle-jenkins-plugin.git'
-            connection 'scm:https://github.com/ghale/gradle-jenkins-plugin.git'
-            developerConnection 'scm:git@github.com/ghale/gradle-jenkins-plugin.git'
+            url 'https://github.com/www/gradle-jenkins-plugin.git'
+            connection 'scm:https://github.com/www/gradle-jenkins-plugin.git'
+            developerConnection 'scm:git@github.com/www/gradle-jenkins-plugin.git'
         }
 
         licenses {
@@ -127,23 +127,23 @@ modifyPom {
 
         developers {
             developer {
-                id 'ghale'
-                name 'Gary Hale'
-                email 'ghhale@computer.org'
+                id 'www'
+                name 'Vladimir Kulkov'
+                email 'www@computer.org'
             }
         }
     }
 }
 
 pluginBundle {
-    website = 'https://github.com/ghale/gradle-jenkins-plugin'
-    vcsUrl = 'https://github.com/ghale/gradle-jenkins-plugin'
+    website = 'https://github.com/www/gradle-jenkins-plugin'
+    vcsUrl = 'https://github.com/www/gradle-jenkins-plugin'
     description = 'A Gradle plugin for programmatically managing Jenkins instances.'
     tags = ['jenkins', 'gradle']
 
     plugins {
         jenkins {
-            id = 'com.terrafolio.jenkins'
+            id = 'com.terrafolio.jenkins.www'
             displayName = 'Gradle Jenkins plugin'
         }
     }
